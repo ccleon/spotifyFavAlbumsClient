@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_album_detallado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cori.spotifyapi_client.OpinionPersonal">
+
+    <ImageView
+        android:id="@+id/portadaAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"/>
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloAlbum"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:scaleX=".65"
+            android:scaleY=".65"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:stepSize="1.0"
+            android:isIndicator="false"
+            />
+
+        <EditText
+            android:id="@+id/comentario"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:layout_weight="1"
+            android:hint="Escriba su opinion"/>
+
+        <Button
+            android:id="@+id/añadirComentario"
+            android:text="Guardar opinión"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_weight="9"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom"
+            android:onClick="añadirComentario"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Valora tus favoritos</string>
+    <string name="title_activity_opinion_personal">Añade tu opinión</string>
+    <string name="title_activity_ver_comentarios">Historial Opiniones</string>
+</resources>
